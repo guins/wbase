@@ -1,0 +1,7 @@
+{
+	"jade": {
+		"src": "./src/templates/*.jade",
+		"dest": "./build",
+		"dataRelativePath": "../data/templates/"
+	}
+}

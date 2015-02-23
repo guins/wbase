@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/guins/wbase/issues"
   },
-  "homepage": "https://github.com/guins/wbase"
+  "homepage": "https://github.com/guins/wbase",
+  "devDependencies": {
+    "jade": "^1.9.2"
+  }
 }

@@ -2,6 +2,8 @@ srcPath = "./src/"
 destPath = "./build/"
 
 module.exports = {
+	templateEngine: "jade"
+	cssProcessor: "stylus"
 	jade:
 		src: "#{srcPath}/templates/*.jade"
 		dest: "#{destPath}"

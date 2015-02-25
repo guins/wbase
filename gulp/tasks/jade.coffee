@@ -4,7 +4,7 @@ data = require 'gulp-data'
 jade = require 'gulp-jade'
 config = require('../config.coffee').jade
 
-gulp.task 'templates', ()->
+gulp.task 'jade', ()->
 	gulp.src(config.src)
 		.pipe(data((file)->
 			return require(config.dataRelativePath + path.basename(file.path, '.jade') + '.json')

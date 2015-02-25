@@ -4,7 +4,7 @@ config = require('../config.coffee').stylus
 autoprefixer = require 'autoprefixer-stylus'
 rename = require 'gulp-rename'
 
-gulp.task 'stylus', ()->
+gulp.task 'stylus-dev', ()->
 	gulp.src( config.src )
 		.pipe(stylus({
 			linenos: true
@@ -25,4 +25,4 @@ gulp.task 'stylus-min', ()->
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest( config.dest ))
 
-gulp.task 'styles', ['stylus', 'stylus-min']
+gulp.task 'stylus', ['stylus-dev', 'stylus-min']

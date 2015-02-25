@@ -11,4 +11,8 @@ module.exports = {
 	stylus:
 		src: "#{srcPath}/styles/*.styl"
 		dest: "#{destPath}/css"
+	coffee:
+		src: "#{srcPath}/scripts/**/*.coffee"
+		dest: "#{destPath}/js"
+		options: {}
 }

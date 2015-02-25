@@ -11,8 +11,13 @@ module.exports = {
 	stylus:
 		src: "#{srcPath}/styles/*.styl"
 		dest: "#{destPath}/css"
-	coffee:
-		src: "#{srcPath}/scripts/app/main.coffee"
-		dest: "#{destPath}/js"
-		bundleName: "app-bundle.js"
+	browserify:
+		bundles: [{
+			src: "#{srcPath}/scripts/app/main.coffee"
+			dest: "#{destPath}/js"
+			fileName: "app-bundle.js"
+			options:
+				transform: ['coffeeify']
+				extensions: ['.coffee']
+		}]
 }

@@ -1,5 +1,11 @@
+
+/* line 5 : /Users/Guins/Sites/github/wbase/src/styles/main.styl */
+
+/* line 1 : /Users/Guins/Sites/github/wbase/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /Users/Guins/Sites/github/wbase/src/styles/main.styl */
 body {
-  background: #f00;
+  background: #008000;
   border-radius: 10px;
   box-shadow: 10px 10px 10px #000;
   -webkit-transform: skew(20, 15);

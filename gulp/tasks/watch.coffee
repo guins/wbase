@@ -1,5 +1,5 @@
 gulp = require 'gulp'
-config = require './config.json'
+config = require '../config.coffee'
 
 gulp.task 'watch', [], ()->
 	gulp.watch config.jade.src, ['templates']

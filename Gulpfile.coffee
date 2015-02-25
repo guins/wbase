@@ -1,8 +1,3 @@
-gulp = require 'gulp'
-
-require './tasks/templates.coffee'
-require './tasks/styles.coffee'
-require './tasks/watch.coffee'
-
-gulp.task 'default', ()->
-	# default task
+require './gulp/tasks/templates.coffee'
+require './gulp/tasks/styles.coffee'
+require './gulp/tasks/watch.coffee'

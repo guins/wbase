@@ -2,14 +2,14 @@ path = require 'path'
 gulp = require 'gulp'
 data = require 'gulp-data'
 jade = require 'gulp-jade'
-jadeConfigs = require('./configs.json').jade
+jadeConfig = require('./config.json').jade
 
 gulp.task 'templates', ()->
-	gulp.src(jadeConfigs.src)
+	gulp.src(jadeConfig.src)
 		.pipe(data((file)->
-			return require(jadeConfigs.dataRelativePath + path.basename(file.path, '.jade') + '.json')
+			return require(jadeConfig.dataRelativePath + path.basename(file.path, '.jade') + '.json')
 		))
 		.pipe(jade({
 			pretty: true
 		}))
-		.pipe(gulp.dest(jadeConfigs.dest))
+		.pipe(gulp.dest(jadeConfig.dest))

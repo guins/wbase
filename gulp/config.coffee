@@ -12,7 +12,7 @@ module.exports = {
 		src: "#{srcPath}/styles/*.styl"
 		dest: "#{destPath}/css"
 	coffee:
-		src: "#{srcPath}/scripts/**/*.coffee"
+		src: "#{srcPath}/scripts/app/main.coffee"
 		dest: "#{destPath}/js"
-		options: {}
+		bundleName: "app-bundle.js"
 }

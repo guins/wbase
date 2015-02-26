@@ -25,7 +25,7 @@ module.exports = {
 	browserify:
 		bundles: [{
 			src: "#{srcPath}/scripts/app/main.coffee"
-			dest: "#{destPath}/js"
+			dest: "#{destPath}/js/app"
 			fileName: "app-bundle.js"
 			options:
 				transform: ['coffeeify']

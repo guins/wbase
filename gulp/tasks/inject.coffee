@@ -4,7 +4,7 @@ inject = require 'gulp-inject'
 config = require('../config.coffee').inject
 _ = require 'lodash'
 
-gulp.task 'inject', ()->
+gulp.task 'inject', ['templates'], ()->
 	target = gulp.src( config.src )
 
 	injectDefaults =

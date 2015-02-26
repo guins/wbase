@@ -3,6 +3,7 @@ concat = require 'gulp-concat'
 config = require('../config.coffee').scripts
 # gutil = require 'gulp-util'
 jsonPackage = require '../../package.json'
+sourcemaps = require 'gulp-sourcemaps'
 _ = require 'lodash'
 
 libsArr = []
@@ -18,7 +19,9 @@ _.forEach jsonPackage["browserify-shim"], (value, link)->
 gulp.task 'scripts:libs',  ()->
 	if libsArr and libsArr.length>0
 		gulp.src(libsArr)
-			.pipe(concat(config.libs.fileName))
+			.pipe(sourcemaps.init())
+				.pipe(concat(config.libs.fileName))
+			.pipe(sourcemaps.write("./"))
 			.pipe(gulp.dest(config.libs.dest))
 
 gulp.task 'scripts', ['scripts:libs']

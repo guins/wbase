@@ -5,6 +5,7 @@ module.exports = (()->
 
 	init = ->
 		_log 'init'
+		_log 'init 2'
 
 	return {
 		init: init

@@ -4,6 +4,17 @@ destPath = "./build"
 module.exports = {
 	templateEngine: "jade"
 	cssProcessor: "stylus"
+	browserSync:
+		watch: [
+			"#{destPath}/js/*.js"
+			"#{destPath}/js/**/*.js"
+			"#{destPath}/css/*.css"
+			"#{destPath}/css/**/*.css"
+			"#{destPath}/*.html"
+			"#{destPath}/**/*.html"
+		]
+		options:
+			proxy: "wbase.my"
 	jade:
 		options:
 			pretty: true

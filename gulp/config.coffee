@@ -43,8 +43,8 @@ module.exports = {
 				src: []
 			default:
 				src: [
-					"#{destPath}/js/app/app-bundle.js"
 					"#{destPath}/js/libs/libs-bundle.js"
+					"#{destPath}/js/app/app-bundle.js"
 				]
 		css:
 			default:

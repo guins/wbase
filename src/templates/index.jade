@@ -1,11 +1,16 @@
 doctype html
 html(lang="en")
 head
-	link(href="./css/main.css", rel="stylesheet")
 	title= pageTitle
+	
+	// inject:css
+	// endinject
+
+	// head:js
+	// endinject
 body
 	h1= title
 	div.test yo
 
-	//- Scripts
-	script(src="./js/app-bundle.js")
+	// inject:js
+	// endinject

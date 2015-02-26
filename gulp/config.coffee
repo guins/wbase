@@ -5,6 +5,8 @@ module.exports = {
 	templateEngine: "jade"
 	cssProcessor: "stylus"
 	jade:
+		options:
+			pretty: true
 		src: "#{srcPath}/templates/*.jade"
 		dest: "#{destPath}"
 		dataRelativePath: "../../data/templates/"

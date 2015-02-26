@@ -29,6 +29,7 @@
     "gulp-stylus": "^2.0.1",
     "gulp-util": "^3.0.3",
     "jade": "^1.9.2",
+    "lodash": "^3.3.1",
     "path": "^0.11.14",
     "require-dir": "^0.1.0",
     "stylus": "^0.50.0"

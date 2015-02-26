@@ -31,4 +31,8 @@ module.exports = {
 				transform: ['coffeeify']
 				extensions: ['.coffee']
 		}]
+	scripts:
+		libs:
+			fileName: "libs-bundle.js"
+			dest: "#{destPath}/js/libs"
 }

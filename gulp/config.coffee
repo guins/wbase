@@ -6,11 +6,8 @@ module.exports = {
 	cssProcessor: "stylus"
 	browserSync:
 		watch: [
-			"#{destPath}/js/*.js"
 			"#{destPath}/js/**/*.js"
-			"#{destPath}/css/*.css"
 			"#{destPath}/css/**/*.css"
-			"#{destPath}/*.html"
 			"#{destPath}/**/*.html"
 		]
 		options:

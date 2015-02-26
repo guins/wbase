@@ -42,11 +42,7 @@
   },
   "browserify": {
     "transform": [
-      "coffeeify",
       "browserify-shim"
-    ],
-    "extensions": [
-      ".coffee"
     ]
   },
   "browserify-shim": {

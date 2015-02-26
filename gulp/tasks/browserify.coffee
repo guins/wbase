@@ -6,8 +6,7 @@ config = require('../config.coffee').browserify
 
 browserifyThis = (bundleConfig)->
 	# gutil.log '[browserify] bundleConfig', bundleConfig
-	browserify(bundleConfig.options)
-		.add(bundleConfig.src)
+	browserify(bundleConfig.src)
 		.bundle()
 		.pipe(source(bundleConfig.fileName))
 		.pipe(gulp.dest(bundleConfig.dest))

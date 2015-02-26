@@ -30,10 +30,16 @@ module.exports = (function() {
 
 
 },{}],3:[function(require,module,exports){
+(function (global){
+var $;
+
+$ = (typeof window !== "undefined" ? window.$ : typeof global !== "undefined" ? global.$ : null);
+
 module.exports = (function() {
   var _log, init;
   _log = function(message) {
-    return console.log("[header component]", message);
+    console.log("[header component]", message);
+    return console.log('body', $('body'));
   };
   init = function() {
     return _log('init');
@@ -45,4 +51,5 @@ module.exports = (function() {
 
 
 
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}]},{},[1]);

@@ -27,8 +27,5 @@ module.exports = {
 			src: "#{srcPath}/scripts/app/main.coffee"
 			dest: "#{destPath}/js/app"
 			fileName: "app-bundle.js"
-			options:
-				transform: ['coffeeify']
-				extensions: ['.coffee']
 		}]
 }
